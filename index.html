@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Almosafer">
+  <meta name="Almosafer" content="Almosafer">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <title>Almosafer Home Page</title>
+
+  <!-- CSS Links -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/fa-svg-with-js.css" rel="stylesheet">
+  <link href="assets/css/checkbox.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="hero-header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fas fa-bed"></i>Hotels<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-plane"></i>Flytes</a>
+            </li>
+          </ul>
+          <div class="my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SAR<i class="fas fa-chevron-down fa-xs"></i></a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">AED</a>
+                  <a class="dropdown-item" href="#">EGP</a>
+                  <a class="dropdown-item" href="#">USD</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Retrieve booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero header -->
+    <div class="jumbotron hero">
+      <div class="container">
+        <h1 class="display-1">Get 10% off on flight and hotel bookings with your Emirates Islamic Card</h1>
+        <p class="display-2">Save on your booking & spend on something fun!</p>
+        <p class="book-btn"><a class="btn btn-primary btn-lg col-sm-2" href="#" role="button">Book your trip</a></p>
+        <img src="assets/img/logo-placement.png" class="emirat-logo img-fluid float-left" alt="Responsive image">
+        <button type="button" class="btn btn-primary btn-circle float-right btn-down"><i class="fas fa-chevron-down fa-5x"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="top-visit">
+    <div class="container">
+      <div class="title">
+        <h1>Visit top destinations around the globe for less</h1>
+        <div class="title-bottom-border"></div>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="Hotels-tab" data-toggle="tab" href="#Hotels" role="tab" aria-controls="Hotels" aria-selected="true">Hotels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Flights-tab" data-toggle="tab" href="#Flights" role="tab" aria-controls="Flights" aria-selected="false">Flights</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="Hotels" role="tabpanel" aria-labelledby="Hotels-tab">
+          <div id="example">
+            <carousel-3d :perspective="0" :display="5" :width="360" :height="575" :controls-visible="true" :clickable="true" :autoplay="true" :autoplay-timeout="5000">
+              <slide :index="0">
+                <figure>
+                  <img src="assets/img/dubai.jpg" height="600" width="400">
+                  <figcaption class="slide-caption">
+                    <h2>Dubai</h2>
+                    <p>United Arab Emirates</p>
+                    <button type="button" class="btn btn-primary btn-circle float-right"><i class="fas fa-arrow-right"></i></button>
+                    <p>starting from<span><b>AED 1,200</b></span></p>
+                  </figcaption>
+                </figure>
+              </slide>
+              <slide :index="1">
+                <figure>
+                  <img src="assets/img/amst.jpg" height="600" width="400">
+                  <figcaption class="slide-caption">
+                    <h2>Amsterdam</h2>
+                    <p>Neuzland</p>
+                    <button type="button" class="btn btn-primary btn-circle float-right"><i class="fas fa-arrow-right"></i></button>
+                    <p>starting from<span><b>EUR 1,200</b></span></p>
+                  </figcaption>
+                </figure>
+              </slide>
+              <slide  :index="2">
+                <figure>
+                  <img src="assets/img/newyork.jpg" height="600" width="400">
+                  <figcaption class="slide-caption">
+                    <h2>NewYourk</h2>
+                    <p>United Stats of Amirca</p>
+                    <button type="button" class="btn btn-primary btn-circle float-right"><i class="fas fa-arrow-right"></i></button>
+                    <p>starting from<span><b>USD 1,200</b></span></p>
+                  </figcaption>
+                </figure>
+              </slide>
+              <slide :index="3">
+                <figure>
+                  <img src="assets/img/cairo.jpg" height="600" width="400">
+                  <figcaption class="slide-caption">
+                    <h2>Cairo</h2>
+                    <p>Egypt</p>
+                    <button type="button" class="btn btn-primary btn-circle float-right"><i class="fas fa-arrow-right"></i></button>
+                    <p>starting from<span><b>EGP 1,200</b></span></p>
+                  </figcaption>
+                </figure>
+              </slide>
+              <slide :index="4">
+                <figure>
+                  <img src="assets/img/tokyo.jpg" height="600" width="400">
+                  <figcaption class="slide-caption">
+                    <h2>Tokyo</h2>
+                    <p>Japan</p>
+                    <button type="button" class="btn btn-primary btn-circle float-right"><i class="fas fa-arrow-right"></i></button>
+                    <p>starting from<span><b>JP 2200</b></span></p>
+                  </figcaption>
+                </figure>
+              </slide>
+            </carousel-3d>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Flights" role="tabpanel" aria-labelledby="Flights-tab">
+
+        </div>
+      </div>
+    </div>
+  </div>
+ <br /><br />
+ <div class="container-fluid no-padd blue-bg">
+   <div class="search-module">
+     <div class="container">
+       <div class="title white-color">
+         <h1>Search for a flight or hotel</h1>
+         <div class="title-bottom-border"></div>
+       </div>
+       <div class="card">
+         <div class="card-body">
+           <div class="row">
+             <div class="col-sm-8">
+               <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                 <li class="nav-item">
+                   <a class="nav-link active" id="pills-one-way-tab" data-toggle="pill" href="#pills-one-way" role="tab" aria-controls="pills-one-way" aria-selected="true">One way</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" id="pills-return-tab" data-toggle="pill" href="#pills-return" role="tab" aria-controls="pills-return" aria-selected="false">Return</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" id="pills-multicity-tab" data-toggle="pill" href="#pills-multicity" role="tab" aria-controls="pills-multicity" aria-selected="false">Multicity</a>
+                 </li>
+               </ul>
+             </div>
+             <div class="col-sm-4">
+               <form class="form-inline">
+                 <div class="form-check form-check-inline">
+                   <div class="checkbox-btn">
+                   	  <input type="checkbox" value="value-1" id="rc2" name="rc2">
+                   	  <label for="rc2" onclick>Direct Flights Only</label>
+                   	</div>
+                 </div>
+                 <div class="form-check form-check-inline">
+                   <div class="checkbox-btn">
+                   	  <input type="checkbox" value="value-2" id="rc3" name="rc3">
+                   	  <label for="rc3" onclick>Refundable</label>
+                   	</div>
+                 </div>
+               </form>
+             </div>
+           </div>
+
+           <div class="tab-content" id="pills-tabContent">
+             <div class="tab-pane fade show active" id="pills-one-way" role="tabpanel" aria-labelledby="pills-one-way-tab">
+               <div class="row">
+                 <div class="col-sm-12 col-md-8 col-lg-4">
+                   <div class="col-sm-12 no-padd">
+                     <div class="input-group">
+                       <div class="input-group-prepend">
+                         <div class="input-group-text"><i class="fas fa-crosshairs"></i></div>
+                       </div>
+                       <input type="text" class="form-control" placeholder="origin">
+                       <div class="input-group-prepend">
+                         <div class="input-group-text">
+                             <div class="checkbox-btn nearby">
+                             	  <input type="checkbox" value="value-3" id="rc4" name="rc4">
+                             	  <label for="rc4" onclick>Nearby Airports</label>
+                             	</div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="col-sm-12 no-padd">
+                     <div class="input-group down-input">
+                       <div class="input-group-prepend">
+                         <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
+                       </div>
+                       <input type="text" class="form-control" placeholder="Dubai,UAE">
+                       <div class="input-group-prepend">
+                         <div class="input-group-text">
+                           <div class="checkbox-btn nearby">
+                               <input type="checkbox" value="value-6" id="rc5" name="rc5">
+                               <label for="rc5" onclick>Nearby Airports</label>
+                             </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-sm-12 col-md-4 col-lg-3">
+                   <div class="row mg">
+                     <div class="col-6 day-ckeck">
+                       <div class="row">
+                         <div class="col-4">
+                           <i class="far fa-calendar-check"></i>
+                         </div>
+                         <div class="col-8 no-padd text-center">
+                           <p>January</p>
+                           <h2>5</h2>
+                           <p>Tuesday</p>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-6 day-ckeck2 text-center">
+                       <i class="far fa-calendar-check"></i>
+                       <p>Add Return</p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-sm-8 col-md-8 col-lg-3">
+                   <div class="container-fluid">
+                     <div class="row">
+                       <div class="dropdown btn-block">
+                         <button class="btn input-group btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="col-11">Economy</span>
+                         <span class="col-1"><i class="fas fa-chevron-down"></i></span>
+                       </button>
+                         <div class="dropdown-menu btn-block" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="dropdown btn-block">
+                         <button class="btn input-group down-input btn-block dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="col-11">1 Passenger</span>
+                         <span class="col-1"><i class="fas fa-chevron-down"></i></span>
+                       </button>
+                         <div class="dropdown-menu btn-block" aria-labelledby="dropdownMenuButton2">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-sm-4 col-md-4 col-lg-2">
+                   <button type="button" class="btn btn-primary btn-block btn-search">
+                     <p><i class="fas fa-search"></i></p>
+                     <p>Search Flights</p>
+                   </button>
+                 </div>
+               </div>
+             </div>
+             <div class="tab-pane fade" id="pills-return" role="tabpanel" aria-labelledby="pills-return-tab">....</div>
+             <div class="tab-pane fade" id="pills-multicity" role="tabpanel" aria-labelledby="pills-multicity-tab">....</div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="imagine container-fluid no-padd">
+     <div class="container">
+       <div class="title white-color">
+         <h1>Imagine all the fun things you could do with the money you saved</h1>
+         <div class="title-bottom-border"></div>
+       </div>
+     </div>
+     <div class="row no-gutters">
+       <div class="col-md-4 img-thumb bg-thumb-1">
+         <h1>01</h1>
+         <h2>Enjoy some local foods</h2>
+       </div>
+       <div class="col-md-4 img-thumb bg-thumb-2">
+         <h1>02</h1>
+         <h2>Check out the top attractions</h2>
+       </div>
+       <div class="col-md-4 img-thumb bg-thumb-3">
+         <h1>03</h1>
+         <h2>Get some souvenirs to take home</h2>
+       </div>
+     </div>
+   </div>
+ </div>
+
+  <div class="steps">
+    <div class="container">
+      <div class="title">
+        <h1>How does it work?</h1>
+        <div class="title-bottom-border"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Step 1</h2>
+          <p>
+            Book your flight or hotel through the Almosafer app or website.
+          </p>
+        </div>
+        <div class="col">
+          <h2>Step 2</h2>
+          <p>
+            Book your flight or hotel through the Almosafer app or website.
+          </p>
+        </div>
+        <div class="col">
+          <h2>Step 3</h2>
+          <p>
+            Book your flight or hotel through the Almosafer app or website.
+          </p>
+        </div>
+        <div class="col">
+          <h2>Step 4</h2>
+          <p>
+            Book your flight or hotel through the Almosafer app or website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="container">
+      <div class="title white-color">
+        <h1>Emirates Islamic Bank Featured Credit Cards</h1>
+        <div class="title-bottom-border"></div>
+      </div>
+      <div class="row">
+        <img src="assets/img/credit-cards.png" alt="credit-cards" />
+        <div class="col-3">
+          <p>Skywards Infinite Credit Card</p>
+        </div>
+        <div class="col-3">
+          <p>Cashback Credit Card</p>
+        </div>
+        <div class="col-3">
+          <p>Emarati Credit Card</p>
+        </div>
+        <div class="col-3">
+          <p>Flex Elite Credit Card</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="terms">
+    <div class="container">
+      <div class="title">
+        <h1>Terms and Conditions</h1>
+        <div class="title-bottom-border"></div>
+      </div>
+      <ol class="row" type="1.">
+        <div class="col-md-6">
+          <li>10% off all hotel & flight bookings with your Emirates Islamic Bank card</li>
+          <li>The discount is applied on the total booking amount, excluding the service fee/taxes.</li>
+          <li>The discount will automatically be deducted upon checkout when the applicable Emirates Islamic Bank card info is entered.</li>
+          <li>Offer applicable only for Emirates Islamic Bank cardholders.</li>
+          <li>Offer applies to all flight bookings (domestic and international) boarding from UAE or elsewhere.</li>
+          <li>Valid for adult, children and infant ticket bookings</li>
+          <li>Only valid on ae.almosafer.com and the Almosafer mobile app.</li>
+        </div>
+        <div class="col-md-6">
+          <li>
+            Offer can be redeemed only once per user – either a flight booking or a hotel booking.
+          </li>
+          <li>
+            Sale period: Book by 25 October 2017.
+          </li>
+          <li>
+            Travel Period: Open travel dates with no blackout dates.
+          </li>
+          <li>
+            All flights fares are subject to availability at the time of booking.
+          </li>
+          <li>
+            Check “Fare Conditions” during the booking to view all applicable fare rules, penalties, flight restrictions and date change fees. Other flight terms and conditions apply.
+          </li>
+          <li>
+            This offer can't be combined with any other offer.
+          </li>
+        </div>
+      </ol>
+    </div>
+  </div>
+
+  <footer class="container-fluid">
+    <div class="row app-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>Get the Almosafer app!</h3>
+            <p>
+              Our app has all your hotel needs covered: Secure payment channels, easy 4-step booking process, and sleek user designs. What more could you ask for?
+            </p>
+            <a href="#" class="stores"><img src="assets/img/download_app_store-ltr.png" alt="apple-store" /></a>
+            <a href="#" class="stores"><img src="assets/img/download_android_store-ltr.png" alt="android-store" /></a>
+            <br /><br /><br />
+          </div>
+          <div class="col-sm-4">
+            <img src="assets/img/m-app-ltr.png" class="img-fluid apps-img" alt="apple-store" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <img class="brand-logo" src="assets/img/logo-almosafer-icon-w.png" />
+          </div>
+          <div class="col-sm-10">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <h3>Corporate</h3>
+                <ul>
+                  <li>
+                    <a href="#">About us</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3>Legal</h3>
+                <ul>
+                  <li>
+                    <a href="#">Terms & conditions</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3>Support</h3>
+                <ul>
+                  <li>
+                    <a href="#">Contact us</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3>Social media</h3>
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+        <div class="container text-center">
+          <img class="visa-mater-cards" src="assets/img/c2.png" alt="Visa-Mater-Cards" />
+          <p class="copyright">Copyright © 2018 Almosafer</p>
+        </div>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="assets/js/jquery-slim.min.js"><\/script>')
+  </script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/fontawesome-all.min.js"></script>
+  <script src="assets/js/vue.min.js"></script>
+  <script src="assets/js/smooth-scroll.min.js"></script>
+  <script src="assets/js/vue-carousel-3d.min.js"></script>
+  <script>
+    new Vue({
+      el: '#example',
+      data: {
+        slides: 7
+      },
+      components: {
+        'carousel-3d': Carousel3d.Carousel3d,
+        'slide': Carousel3d.Slide
+      }
+    })
+  </script>
+
+</body>
+
+</html>

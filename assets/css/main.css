@@ -1,0 +1,505 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+h1,h2,h3,h4,h5,h6,p{
+  padding: 0;
+  margin:0;
+}
+a , a:hover {
+  text-decoration: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+.svg-inline--fa {
+	font-size: 14px;
+  margin-right: 5px;
+}
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5em;
+	letter-spacing: -0.5px;
+	margin-bottom: 1rem;
+}
+.blue-bg {
+  background: #1E6BA0;
+}
+.title {
+	margin: 3rem 0;
+}
+.no-padd {
+	padding: 0;
+}
+.title-bottom-border {
+	border: 4px solid #7a7a7a;
+	width: 180px;
+}
+.svg-inline--fa.fa-plane {
+  transform: rotate(-45deg);
+}
+.btn-primary {
+	background:#d33497;
+  border: 0;
+}
+/*Navbar*/
+.navbar.navbar-expand-md {
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 3;
+}
+.navbar-brand img {
+  max-width: 160px;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: rgb(255, 255, 255);
+}
+.navbar-expand-md .navbar-nav .nav-link {
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+}
+.nav-link {
+	padding: 1.2rem;
+}
+.dropdown-menu {
+	border-radius: 0;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #fe34d8;
+    border: 0;
+}
+/*hero-header*/
+.hero {
+	background-image: url("../img/hero.jpg");
+	background-repeat: no-repeat;
+	position: relative;
+	top: -70px;
+	z-index: 1;
+	background-position: top;
+}
+.jumbotron {
+	border-radius: 0;
+}
+.display-1 {
+	font-size: 45px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: -1px;
+	padding: 6rem 0px 0 0;
+}
+.display-2 {
+	font-size: 28px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -0.2px;
+	padding: 1.3rem 0;
+}
+.book-btn .btn-primary {
+	background-image: linear-gradient(to bottom, #e735aa, #981367);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+	border: 0;
+  min-width: 16rem;
+}
+.book-btn {
+	padding-bottom: 25rem;
+}
+.btn-circle {
+	border-radius: 100%;
+	width: 64px;
+	height: 64px;
+}
+.fa-arrow-right, .fa-chevron-down {
+	font-size: 24px;
+	margin: 0;
+}
+.btn-down {
+  position: relative;
+  margin-top: 1.8rem;
+}
+.emirat-img {
+	margin-top: -2rem;
+}
+.emirat-logo {
+	margin-top: -1.3rem;
+}
+/*Top Visit*/
+.nav-tabs .nav-link {
+  font-size: 24px;
+    line-height: 1.33;
+    letter-spacing: -0.5px;
+    color: #751b53;
+    border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: #751b53;
+	border-bottom: 5px solid;
+}
+/*3D carousel*/
+.carousel-3d-container figure {
+  margin:0;
+}
+.next, .prev {
+	color: #dadada !important;
+}
+.carousel-3d-container figcaption {
+	position: absolute;
+	background: linear-gradient(0deg, black, #0000);
+	color: #fff;
+	bottom: 0;
+	position: absolute;
+	bottom: 0;
+	padding: 15px;
+	font-size: 12px;
+	min-width: 100%;
+	box-sizing: border-box;
+}
+.slide-caption h2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+.slide-caption p {
+	font-size: 16px;
+  line-height: 2rem;
+}
+
+/*search-module*/
+.search-module {
+	/*background-image: url("../img/module-bg.png");*/
+	background-repeat: round;
+	padding: 2rem 0 4rem;
+}
+.title.white-color {
+    color: #fff;
+}
+.white-color .title-bottom-border {
+	border: 4px solid #fff;
+	width: 180px;
+}
+.card {
+	background-color: #0005;
+}
+.card-body {
+	background: #0000;
+	color: #fff;
+}
+.nav-link {
+	padding: 0.8rem;
+}
+.nav-pills .nav-link {
+	color: #fff;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: #ffffff1a;
+}
+#pills-tab {
+	margin-bottom: 1.5rem;
+}
+.input-group {
+	background: #fff;
+	margin-bottom: 1px;
+	border-radius: 5px 5px 0 0;
+	color: #751b53;
+}
+.input-group-text svg {
+	margin: 11px 5px;
+}
+.input-group.down-input {
+	border-radius: 0 0 5px 5px;
+}
+.checkbox-btn.nearby {
+	padding: 5px 5px 0px 0;
+}
+.input-group .form-control {
+	border: 0;
+}
+.input-group .form-control:focus {
+	color: #751b53;
+	background-color: #fff;
+	box-shadow: 0 0 0;
+}
+.input-group-text svg {
+	top: 9px;
+	position: relative;
+	margin: 6px;
+}
+.day-ckeck {
+	background: #fff;
+	color: #751b53;
+	font-size: 14px;
+	border-radius: 5px 0 0 5px;
+  margin-right: 1px;
+}
+.day-ckeck2 {
+	background: #fff;
+	color: #751b53;
+	font-size: 14px;
+	border-radius: 0 5px 5px 0;
+  margin-right: -1px;
+}
+.day-ckeck2 svg {
+	font-size: 26px;
+	margin: 1rem 0px;
+}
+.day-ckeck svg {
+	font-size: 26px;
+	margin: 2rem 0px;
+}
+.dropdown-toggle::after {
+	display: none;
+}
+.btn.input-group {
+	padding: 0.63rem .75rem;
+}
+.dropdown-toggle span svg {
+	float: right;
+	font-size: 14px;
+	margin-top: 4px;
+}
+nav .svg-inline--fa.fa-chevron-down {
+	font-size: 14px;
+	margin: 0 8px;
+}
+.btn-search {
+	background: #d33497;
+	border: 0;
+	padding: 1.4rem 0;
+}
+.btn-search .svg-inline--fa.fa-search {
+	font-size: 18px;
+}
+/*imagine*/
+.imagine {
+	background-color: #1E6BA0;
+}
+.img-thumb {
+	height: 400px;
+}
+.bg-thumb-1 {
+  background-image: url("../img/fun-things-1.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-thumb-2 {
+  background-image: url("../img/fun-things-2.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-thumb-3 {
+  background-image: url("../img/fun-things-3.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-thumb:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(0deg, #0076C400, #1E6BA0);
+}
+.img-thumb h1 {
+	position: absolute;
+	z-index: 10;
+	font-size: 8em;
+	font-weight: 800;
+	color: #ffffff4d;
+	top: 80%;
+	padding: 1rem;
+	line-height: 0;
+}
+.img-thumb h2 {
+	position: absolute;
+	top: 75%;
+	z-index: 11;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 0 4rem;
+	color: #fff;
+}
+/*Steps & Cards*/
+.steps {
+	padding-bottom: 5rem;
+}
+.steps h2 {
+	color: #751b53;
+	border-bottom: 5px solid;
+	width: 40%;
+	padding: 0.5rem 0;
+	margin: 1rem 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+.steps p, .terms ol {
+	color: #777;
+	font-size: 15px;
+	line-height: 1.8rem;
+}
+.cards {
+	background-color: #4d1965;
+  padding:4rem 0;
+}
+.cards p {
+  color: #fff;
+}
+.terms {
+	padding-bottom: 5rem;
+}
+/*Footer*/
+footer {
+	color: #fff;
+  background: linear-gradient(79deg,#1a2980,#26d0ce);
+}
+.app-footer {
+	background-color: rgba(3,75,123,.8);
+	padding: 0.8rem 0 0 0;
+}
+.app-footer h3 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 3rem;
+}
+.app-footer p {
+	font-size: 14px;
+  margin-bottom: 1rem;
+}
+.stores img {
+	height: 36px;
+}
+.apps-img {
+	position: absolute;
+	width: 90%;
+	float: right;
+	bottom: 0;
+}
+.main-footer {
+	background-image: url("../img/footer-ptrn.png");
+	padding: 4rem 0 0.5rem 0;
+}
+.main-footer .brand-logo {
+  height: 86px;
+}
+.main-footer h3 {
+	color: #34c4e8;
+	font-size: 18px;
+	padding: 2.5rem 0;
+}
+.main-footer h3::after {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 20px;
+	background-color: #fff;
+	position: absolute;
+	top: 5rem;
+}
+.main-footer ul {
+	padding:0;
+  margin:0;
+  color:#fff;
+  font-size: 14px;
+}
+.main-footer ul li {
+	list-style: none;
+	line-height: 3rem;
+}
+.main-footer ul li a {
+	color:#fff;
+}
+.main-footer .visa-mater-cards {
+  height: 24px;
+}
+.main-footer .copyright{
+  font-size: 12px;
+  padding: 1rem 0;
+}
+/*Media Query*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.99px) {
+  h1 {
+	font-size: 24px;
+	line-height: 2em;
+}
+.book-btn {
+	padding-bottom: 10rem;
+}
+.display-1 {
+	font-size: 26px;
+	padding: 4rem 0px 0 0;
+}
+.display-2 {
+	font-size: 18px;
+}
+.btn-down {
+	margin-top: 0;
+}
+.emirat-logo {
+	margin-top: -5rem;
+}
+.img-thumb h2 {
+	font-size: 20px;
+}
+.steps h2 {
+	margin: 0.5rem 0;
+	font-size: 18px;
+}
+.apps-img {
+	position: relative;
+	width: 30%;
+	float: right;
+	bottom: 0;
+}
+h1 {
+	font-size: 26px;
+	line-height: 1.5em;
+}
+.mg {
+  margin: 0 0 1px 0;
+}
+.day-ckeck2 p, .day-ckeck p {
+	font-size: 12px;
+}
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (min-width: 576px) and (max-width: 991.99px) {
+.navbar-expand-md .navbar-nav .nav-link {
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+}
+.nav-link {
+	padding: 0.5rem;
+}
+.display-1 {
+	font-size: 36px;
+	padding: 4rem 0 0 0;
+}
+.book-btn {
+	padding-bottom: 20rem;
+}
+.img-thumb h2 {
+	font-size: 20px;
+}
+.steps h2 {
+	margin: 0.5rem 0;
+	font-size: 18px;
+}
+.mg {
+  margin: 0 0 1px 0;
+}
+.day-ckeck2 p, .day-ckeck p {
+	font-size: 12px;
+}
+}
